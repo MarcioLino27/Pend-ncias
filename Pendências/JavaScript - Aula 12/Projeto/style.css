@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Define cores principais */
+:root {
+    --primary-color: #ff0000; /* Vermelho */
+    --secondary-color: #000000; /* Preto */
+    --background-color: #1a1a1a; /* Nova cor de fundo */
+    --border-color: #333333; /* Cor das bordas */
+  }
+  
+
+body{
+    background-color: var(--background-color);
+    color: var(--primary-color);
+}

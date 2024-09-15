@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Simples</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Blog Simples</h1>
+
+    <section id="new-post">
+        <h2>Adicionar Nova Postagem</h2>
+        <form id="post-form">
+            <input type="text" id="title" name="title" placeholder="Título da Postagem" required>
+            <textarea id="content" name="content" placeholder="Conteúdo da Postagem" rows="5" required></textarea>
+            <button type="submit">Adicionar Postagem</button>
+        </form>
+    </section>
+
+    <section id="post-list">
+        <h2>Publicações</h2>
+        <ul id="posts"></ul>
+    </section>
+
+    <section id="post-details" style="display: none;">
+        <h2 id="detail-title"></h2>
+        <p id="detail-date"></p>
+        <p id="detail-content"></p>
+        <h3>Comentários</h3>
+        <ul id="comment-list"></ul>
+        <input type="text" id="comment-input" placeholder="Adicione um comentário">
+        <button id="comment-button">Enviar Comentário</button>
+        <button id="back-button">Voltar</button>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

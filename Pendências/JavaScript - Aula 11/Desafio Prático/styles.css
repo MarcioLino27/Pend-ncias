@@ -1,0 +1,179 @@
+/* Reset básico */
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1, h2 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+section {
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 40px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#new-post {
+    background-color: #eaf2f8;
+}
+
+#post-form input, #post-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+    font-size: 1em;
+    font-family: 'Arial', sans-serif;
+}
+
+#post-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #3498db;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#post-form button:hover {
+    background-color: #2980b9;
+}
+
+#posts {
+    list-style-type: none;
+    padding: 0;
+}
+
+#posts li {
+    position: relative; /* Para posicionar o botão de deletar */
+    background: #ecf0f1;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.3s ease;
+    border-left: 5px solid #3498db;
+}
+
+#posts li:hover {
+    background-color: #e0e0e0;
+    transform: translateX(5px);
+}
+
+/* Botão para remover postagem */
+.delete-post {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    color: #e74c3c;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.delete-post:hover {
+    color: #c0392b;
+}
+
+#post-details {
+    background-color: #f8f9fa;
+}
+
+#detail-title {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+#detail-date {
+    font-size: 0.9em;
+    color: #7f8c8d;
+    margin-bottom: 20px;
+}
+
+#detail-content {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+#comment-list {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+#comment-list li {
+    background: #dfe6e9;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#comment-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+#comment-button, #back-button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+#comment-button {
+    background-color: #2ecc71;
+    color: #fff;
+    margin-right: 10px;
+}
+
+#comment-button:hover {
+    background-color: #27ae60;
+}
+
+#back-button {
+    background-color: #e74c3c;
+    color: #fff;
+}
+
+#back-button:hover {
+    background-color: #c0392b;
+}
